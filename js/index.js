@@ -25,7 +25,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebas
         const user = userCredential.user;
         status.textContent = "✅ Inicio de sesión exitoso.";
         // Redireccionar a otra página
-        window.location.href = "html/noticias.html"; // Cambia esto por tu panel principal
+        window.location.href = "html/inicio.html"; // Cambia esto por tu panel principal
       } catch (error) {
         console.error(error.message);
         status.textContent = "❌ Credenciales incorrectas o usuario no registrado.";

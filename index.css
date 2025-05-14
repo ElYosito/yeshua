@@ -12,39 +12,29 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('img/fondo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding: 20px;
     position: relative;
     overflow: hidden;
-    background-attachment: scroll;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Puedes ajustar la opacidad */
-    z-index: -1;
+    background: radial-gradient(circle at center, #394867, #1a2137);
+    /* Gradiente radial */
 }
 
 .wrapper {
+    position: relative;
+    z-index: 1;
     max-width: 420px;
     width: 100%;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     color: #fff;
-    border-radius: 10px;
-    padding: 30px 40px;
-    background-color: #fff5; /* Fondo semi-transparente */
-    
+    border-radius: 15px;
+    padding: 40px 35px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+
 }
 
 .wrapper .img {
@@ -181,5 +171,92 @@ body::before {
 
     .input-box i {
         font-size: 19px;
+    }
+}
+
+/* Partículas animadas de fondo */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.particles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    border-radius: 50%;
+}
+
+.particles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 22s;
+}
+
+.particles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.particles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 17s;
+    animation-delay: 4s;
+}
+
+.particles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 25s;
+    animation-delay: 0s;
+}
+
+.particles li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 18s;
+    animation-delay: 0s;
+}
+
+.particles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-duration: 20s;
+    animation-delay: 3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
 }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/iconoy.png" type="image/x-icon">
+    <title>Inicio - Yeshua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/asistencia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans+JP...&family=Nunito+Sans..."
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div id="cloud" class="nombre-pagina">
+                <img src="../img/iconoy.png" alt="Logo de liga Yeshua">
+                <span>Liga Yeshua</span>
+            </div>
+            <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Agregar nuevo</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="home" href="inicio.html">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="jovenes" href="verJovenes.html">
+                        <ion-icon name="person"></ion-icon>
+                        <span>Jovenes</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="asistencia" href="asistencia.html">
+                        <ion-icon name="checkbox-outline"></ion-icon>
+                        <span>Asistencia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Calendario (Ligas)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Tesoreria</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon"></ion-icon>
+                    <span>Modo oscuro</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <img src="../img/user.jpeg" alt="">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre"></span>
+                        <span class="email"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <h1>Asistencia</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis libero fuga animi suscipit quibusdam quidem
+            autem recusandae laboriosam ullam quam at nobis, obcaecati facere. Ex animi sit dolore magni fuga.</p>
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content" id="form-joven">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de nuevo Jóven</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan Perez"
+                            required>
+                        <label for="nombre">Nombre:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección"
+                            required>
+                        <label for="direccion">Dirección:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="genero" name="genero" required>
+                            <option value="" disabled selected>Seleccionar una opción</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                        <label for="genero">Género:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono"
+                            required>
+                        <label for="telefono">Teléfono:</label>
+                    </div>
+                </div>
+
+                <p id="mensaje" class="mt-2 fw-bold text-success align-content-center text-center"></p>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script type="module" src="../js/jovenes/crud-Joven.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="../js/sidebar.js"></script>
+</body>
+
+</html>
