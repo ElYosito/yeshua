@@ -33,7 +33,7 @@ let usuarioActual = null;
 const cargosPorCorreo = {
     "yosmar@hotmail.com": "Presidente",
     "invitado@hotmail.com": "siJalo",
-    "ejemplo@gmail.com": "Secretario"
+    "yoseline@hotmail.com": "Secretaria"
     // Agrega más correos aquí según necesites
 };
 

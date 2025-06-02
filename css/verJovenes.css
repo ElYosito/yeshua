@@ -300,6 +300,14 @@ main.min-main{
     margin-left: 80px;
 }
 
+.contenido{
+    background-color: var(--color-fondo);
+}
+
+#modal-texto{
+    color: black;
+}
+
 @media (max-height: 660px){
     .barra-lateral .nombre-pagina{
         margin-bottom: 5px;

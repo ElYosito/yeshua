@@ -52,6 +52,7 @@ async function eliminarJoven(id) {
   if (confirm("¿Estás seguro de que deseas eliminar este registro?")) {
     await deleteDoc(doc(db, "jovenes", id));
     document.getElementById(`joven-${id}`).remove();
+    await cargarJovenes();
   }
 }
 

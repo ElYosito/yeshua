@@ -103,7 +103,7 @@
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <form class="modal-content" id="form-joven">
+            <form class="modal-content contenido" id="form-joven">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de nuevo Jóven</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -113,18 +113,18 @@
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan Perez"
                             required>
-                        <label for="nombre">Nombre:</label>
+                        <label id="modal-texto" for="nombre">Nombre:</label>
                     </div>
 
                     <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
-                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <label id="modal-texto" for="fecha_nacimiento">Fecha de Nacimiento:</label>
                     </div>
 
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección"
                             required>
-                        <label for="direccion">Dirección:</label>
+                        <label id="modal-texto" for="direccion">Dirección:</label>
                     </div>
 
                     <div class="form-floating mb-3">
@@ -133,13 +133,13 @@
                             <option value="Masculino">Masculino</option>
                             <option value="Femenino">Femenino</option>
                         </select>
-                        <label for="genero">Género:</label>
+                        <label id="modal-texto" for="genero">Género:</label>
                     </div>
 
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono"
                             required>
-                        <label for="telefono">Teléfono:</label>
+                        <label id="modal-texto" for="telefono">Teléfono:</label>
                     </div>
                 </div>
 
